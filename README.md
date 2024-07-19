@@ -1,30 +1,74 @@
-# React + TypeScript + Vite
+# Simple Txt-2-pdf
+Це додаток на React + TypeScript, який дозволяє користувачам конвертувати введений текст у PDF файл за допомогою запиту до сервера, а потім відображати або завантажити згенерований PDF документ.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Основний функціонал
+**Form**: Компонент форми для отримання тексту та виконання запиту для конвертації. Складається з Textarea та Button.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**PDF Viewer**: Компонент, який відображає зконвертований документ у форматі PDF. Має пагінацію та кнопку для завантаження зконвертованого файлу.
 
-## Expanding the ESLint configuration
+**History**: Компонент для відображення попередніх конвертацій та швидкого переходу на них.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Стилі для додатка.
+Використовує Tailwind CSS для швидкого створення інтерфейсу.
 
-- Configure the top-level `parserOptions` property like this:
+### Використані технології
+**React**: Бібліотека для створення користувацьких інтерфейсів.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+**TypeScript**: Мова програмування, яка додає статичну типізацію до JavaScript.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**react-pdf**: Бібліотека для відображення PDF документів у React додатках.
+
+**Vite**: Інструмент для швидкої збірки та розробки додатків.
+
+**Tailwind CSS**: CSS бібліотека для створення інтерфейсів.
+
+**ESLint**: Інструмент для аналізу коду з метою виявлення проблем у JavaScript/TypeScript коді.
+
+**Prettier**: Інструмент для форматування коду.
+
+**Vitest**: Тестовий фреймворк для юніт та інтеграційних тестів.
+
+**@testing-library/react**: Бібліотека для тестування React компонентів.
+
+**TypeScript ESLint**: Плагін для ESLint, який додає підтримку TypeScript.
+
+### Команди скриптів
+> **dev**: Запуск середовища розробки.
+>
+> **build**: Компіляція TypeScript коду та збірка проекту.
+>
+> **lint**: Аналіз коду з ESLint.
+>
+> **test**: Запуск тестів з Vitest.
+>
+> **preview**: Запуск збірки проекту в режимі перегляду.
+
+
+### Запуск
+для запуску проекту потрібно:
+
+> git clone https://github.com/Avocod3r/simple-txt-2-pdf.git
+
+
+перейти в папку проекту
+
+> cd simple-txt-2-pdf
+
+
+встановити залежності
+
+> npm install
+
+
+скопіювати перемінні з файлу
+
+> env.locale
+
+до файлу 
+> .env
+
+
+запустити start скрипт
+> npm run dev
+
